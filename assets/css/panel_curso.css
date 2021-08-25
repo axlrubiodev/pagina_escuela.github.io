@@ -1,0 +1,245 @@
+body{
+    background-image: url(../img/pattern1.png);
+}
+
+
+/* -------------------------------- Cabecera -------------------------------- */
+.cabecera_curso{
+    background-color: #85C553;
+}
+
+.cabecera_curso .wrap_cabecera{
+    margin: 0 auto;
+    min-height: 100px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.atras_boton{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.atras_boton:hover{
+    background-color: #6baf37;
+}
+
+.atras_boton svg{
+    width: 100%;
+    transform: rotate(180deg);
+    fill: white;
+}
+
+
+
+
+.nombre{
+    margin-left: 15px;
+}
+
+.nombre h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.nombre p{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+
+.nombre_prof{
+    display: flex;
+    align-items: center;
+}
+
+.nombre_prof svg{
+    width: 30px;
+    fill: white;
+    margin-right: 10px;
+}
+/* -------------------------------------------------------------------------- */
+
+
+/* ............................. Panel de tareas ............................. */
+.panel_tarea{
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.panel_tarea .wrap_curso{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.menu_tarea{
+    width: 300px;
+    background-color: #FAFAFA;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+
+/*.botonera_tarea{
+    overflow-y: scroll
+}*/
+
+.botonera_tarea ul li a{
+    display: block;
+    text-decoration: none;
+    color: #3c3c3c;
+    padding: 12px;
+    font-size: 15px;
+    text-transform: capitalize;
+    
+    display: flex;
+    align-items: center;
+}
+
+.botonera_tarea ul li a:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.botonera_tarea ul li a svg{
+    width: 18px;
+    fill: #3c3c3c;
+    margin-right: 15px;
+}
+
+.menu_tarea h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #3c3c3c;
+}
+/* ........................................................................... */
+
+
+
+/* ........................... Informacion de tareas ........................... */
+.menu_informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+}
+
+
+.menu_informacion .botonera_tarea{
+    padding: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_informacion .botonera_tarea svg{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.menu_informacion .botonera_tarea a{
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    align-items: center;
+    fill: white;
+    background-color: #00A5EE;
+    transition: all 500ms;
+}
+
+
+.menu_informacion .botonera_tarea a:hover{
+    box-shadow: 0px -5px 0px #007aae inset;
+}
+
+
+.menu_informacion .no_hay_tareas{
+    display: none !important;
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: white;
+    box-shadow: 0px 0px 80px 50px rgba(255,255,255,0.8);*/
+}
+
+.menu_informacion .no_hay_tareas img{
+    width: 200px;
+}
+
+.menu_informacion .no_hay_tareas p{
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+.tareas{
+    padding: 40px;
+}
+
+.tareas .tarea{
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.tareas .tarea a{
+    text-decoration: none;
+    color:  #896DD2;
+}
+
+.tareas .tarea a:hover{
+    text-decoration: underline;
+}
+
+.tareas .tarea h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #896DD2;
+}
+
+.tareas .tarea .estado_tarea{
+    display: inline-block;
+    padding: 10px;
+    background-color: #0C8B4F;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.tareas .tarea .fecha_tarea{
+    font-size: 15px;
+    margin-bottom: 15px;
+    color: #3c3c3c;
+}
+
+.tareas .tarea .descripcion_tarea{
+    color: #3c3c3c;
+    margin-top: 30px;
+}
+/* ............................................................................. */

@@ -1,0 +1,216 @@
+/* -------------------------------- Cabecera -------------------------------- */
+.header_nosotros{
+    background-image: url(../img/nosotros-bc-bg.png);
+}
+
+.header_nosotros .wrap_header_nosotros{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.header_nosotros .wrap_header_nosotros h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------- Contenido -------------------------------- */
+.contenedor_informacion{
+    background-color: #FAFAFA;
+}
+
+.wrap_informacion{
+    width: 1024px;
+    padding: 170px 0px;
+    margin: 0 auto;
+}
+
+
+
+.grilla_1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    background-color: #FAFAFA;
+}
+
+.grilla_1 .texto{
+    width: 100%;
+    align-self: center;
+}
+
+.grilla_1 .texto h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #86C554;
+}
+
+.grilla_1 .texto p{
+    margin-bottom: 15px;
+    line-height: normal;
+    font-size: 16px;
+    color: #3c3c3c;
+}
+
+.grilla_1 .texto p strong{
+    font-weight: 900;
+}
+
+.grilla_1 .imagen img{
+    width: 100%;
+}
+
+.contenedor_imagen_nos{
+    min-height: 300px;
+    border: 10px solid #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.c2{
+    color: #856FCB !important;
+}
+
+.c3{
+    color: #FFA837 !important;
+}
+/* --------------------------------------------------------------------------- */
+
+
+/* ------------------------- Servicios que brindamos ------------------------- */
+.contenedor_services{
+    background-image: url(../img/ab-para.jpg);
+}
+
+.contenedor_services .wrap_services{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.contenedor_services .wrap_services h3{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.contenedor_services .wrap_services .ct_services{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .burbuja_service{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .burbuja_service img{
+    width: 70px;
+    height: 70px;
+}
+
+.service h5{
+    font-size: 25px;
+    color: white;
+    text-transform: capitalize;
+}
+/* --------------------------------------------------------------------------- */
+
+
+
+/* Team */
+.equipo_trabajo{
+    background-image: url(../img/bg_teacher.jpg);
+}
+
+.equipo_trabajo .wrap_team{
+    width: 900px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+.equipo_trabajo .wrap_team h4{
+    text-align: center;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #F93E39;
+    margin-bottom: 80px;
+}
+
+.equipo_trabajo .wrap_team .content_team{
+    min-height: 400px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.team{
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+    position: relative;
+    background-color: white;
+
+    box-shadow: 5px 5px 8px  rgba(133, 111, 203, 0.2);
+    border-radius: 10px;
+}
+
+.team .img_team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .img_team .contenedor_imagen{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 0px #EAE8F0;
+}
+
+.team .info_team{
+    color: #856FCB;
+    text-align: center;
+    font-size: 23px;
+    padding: 40px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .info_team h3{
+    text-transform: capitalize;
+}
+
+.team .info_team p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #3c3c3c;
+    font-weight: 600;
+    text-transform: capitalize;
+}

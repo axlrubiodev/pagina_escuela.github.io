@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Inicia Sesión</title>
+
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <link rel="stylesheet" href="assets/css/inicia-sesion.css" />
+
+        <link rel="stylesheet" href="assets/css/footer.css" />
+        <link rel="stylesheet" href="assets/css/medidas.css" />
+    </head>
+    <body>
+        
+        <!-- Barra de navegacion -->
+        <nav class="barra_navegacion">
+            <article class="wrap">
+                <!-- Menu en mobile -->
+                <article class="menu_uno">
+                    <div class="wrap">
+                        <a href="#">
+                            <img src="assets/img/practica.png" alt="logo" class="logo" />
+                        </a>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path xmlns="http://www.w3.org/2000/svg" d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#00a8f1" data-original="#000000" class=""/>
+                                
+                                <path xmlns="http://www.w3.org/2000/svg" d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z" fill="#00a8f1" data-original="#000000" class=""/>
+                                
+                                <path xmlns="http://www.w3.org/2000/svg" d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z" fill="#00a8f1" data-original="#000000" class=""/>
+                            </g>
+                        </svg>
+                    </div>
+                </article>
+                <!-- .............. -->
+
+
+                <!-- Menu en escritorio -->
+                <article class="menu_dos">
+                    <ul class="opciones_menu">
+                        <li><a href="index.html">inicio</a></li>
+                        <li><a href="nosotros.html">nosotros</a></li>
+                        <li><a href="profesores.html">profesores</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                        <li><a href="galeria.html">galeria</a></li>
+                    </ul>
+                </article>
+                <!-- .................. -->
+            </article>
+        </nav>
+        <!-- ................... -->
+
+
+
+        
+        <!-- ................. Login de inicio de sesión ................. -->
+        <section class="contenedor_login">
+            <div class="wrap_login">
+
+                <h2>¡¡ Inicia Sesión Ya !!</h2>
+
+                <article class="contenedor_formulario">
+                    <form action="panel-de-administracion.html" method="POST">
+                        <p>DNI</p>
+                        <div class="contenedor_campo_form p1">
+                            <div class="cuadro_icono">
+                                <svg viewBox="-42 0 512 512.002" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m210.351562 246.632812c33.882813 0 63.222657-12.152343 87.195313-36.128906 23.972656-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.132812 87.195312 23.976563 23.96875 53.3125 36.125 87.1875 36.125zm0 0"/>
+                                    <path d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.308594-10.339844-7.808594-20.550781-13.371094-30.335938-5.773438-10.15625-12.554688-19-20.164063-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.039063 5.339844-10.972656 0-22.085937-1.796876-33.046874-5.339844-11.210938-3.621094-20.296876-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.75-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.605469 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.058594 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.796875-1.023438 19.964844-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.441406 23.734375 65.066406 23.734375h246.53125c26.625 0 48.511719-7.984375 65.0625-23.734375 16.757813-15.945312 25.253906-37.585937 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm0 0"/>
+                                </svg>
+                            </div>
+                            <input type="text" placeholder="Ingresa tu número DNI" />   
+                        </div>
+
+
+                        <p>contraseña</p>
+                        <div class="contenedor_campo_form p2">
+                            <div class="cuadro_icono">
+                                <svg id="bold" enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m18.75 9h-.75v-3c0-3.309-2.691-6-6-6s-6 2.691-6 6v3h-.75c-1.24 0-2.25 1.009-2.25 2.25v10.5c0 1.241 1.01 2.25 2.25 2.25h13.5c1.24 0 2.25-1.009 2.25-2.25v-10.5c0-1.241-1.01-2.25-2.25-2.25zm-10.75-3c0-2.206 1.794-4 4-4s4 1.794 4 4v3h-8zm5 10.722v2.278c0 .552-.447 1-1 1s-1-.448-1-1v-2.278c-.595-.347-1-.985-1-1.722 0-1.103.897-2 2-2s2 .897 2 2c0 .737-.405 1.375-1 1.722z"/>
+                                </svg>
+                            </div>
+                            <input type="password" id="campo_pass" placeholder="Ingresa tu contraseña" />
+                            <div class="cuadro_visibilidad">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M509.188,247.27c-4.57-6.39-113.521-156.272-252.182-156.272C118.334,90.998,7.383,240.88,2.813,247.27
+                                                c-3.75,5.22-3.75,12.25,0,17.46c4.57,6.39,115.521,156.271,254.193,156.271c138.661,0,247.612-149.881,252.182-156.272
+                                                C512.938,259.52,512.938,252.489,509.188,247.27z M257.006,361c-57.891,0-107.001-47.11-107.001-105.001
+                                                s49.11-105.001,107.001-105.001s105.001,47.11,105.001,105.001S314.897,361,257.006,361z"/>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M257.006,210.999c-24.82,0-47,20.19-47,45c0,24.82,22.18,45,47,45c24.81,0,45-20.18,45-45
+                                                C302.006,231.189,281.816,210.999,257.006,210.999z"/>
+                                        </g>
+                                    </g>
+                                    <g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                    <g></g><g></g>
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <button type="submit">ingresar</button>
+
+                        <a href="#" class="olvidar">¿Olvidaste tu contraseña?</a>
+                    </form>
+                </article>
+            </div>
+
+            <div class="gradent"></div>
+        </section>
+        <!-- ............................................................. -->
+
+
+
+        <!-- ..................................... Pie de página ..................................... -->
+        <footer class="footer">
+            <article class="wrap_footer_1">
+                
+                <!-- Bloque 1 -->
+                <div class="bloque_footer">
+                    <h4>acerca de</h4>
+                    <img src="assets/img/practica.png" alt="logo" class="logo_footer" />
+                    <p class="definicion_1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ab fuga neque similique vitae odit veritatis obcaecati nulla, ad dolorem unde vero debitis odio iure praesentium non assumenda necessitatibus qui!
+                    </p>   
+                </div>
+
+                <!-- Bloque 2 -->
+                <div class="bloque_footer">
+                    <h4>navegación</h4>
+
+                    <ul>
+                        <li><a href="">inicio</a></li>
+                        <li><a href="">nosotros</a></li>
+                        <li><a href="">profesores</a></li>
+                        <li><a href="">blog</a></li>
+                        <li><a href="">galeria</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 3 -->
+                <div class="bloque_footer">
+                    <h4>contactanos</h4>
+
+                    <ul>
+                        <li>
+                            <img src="assets/icono/location_1.svg" class="iconos_footer" />
+                            <p>4318 Mansion House, Greenland United States</p>
+                        </li>
+                        <li>
+                            <img src="assets/icono/phone_1.svg" class="iconos_footer" />
+                            <p>(000) 233 - 3236</p>
+                        </li>
+                        <li>
+                            <img src="assets/icono/mail_1.svg" class="iconos_footer" />
+                            <p>Kidzcare@somemail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+
+            <div class="grass"></div>
+            <article class="wrap_footer_2">
+                <p>Desarrollado por cea-virtual.com</p>
+            </article>
+        </footer>
+        <!-- ......................................................................................... -->
+
+
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/campo_login.js"></script>
+    </body>
+</html>

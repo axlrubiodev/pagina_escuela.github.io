@@ -1,0 +1,151 @@
+/* --------------------------------------- Pie de página --------------------------------------- */
+.wrap_footer_1{
+    width: 1200px;
+    padding: 100px 0px;
+    margin: 0 auto;
+}
+
+.grass{
+    height: 32px;
+    background-image: url(../img/menu-bg.png);
+    background-repeat: repeat-x;
+}
+
+.wrap_footer_2{
+    margin: 0 auto;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #B3D158;
+    color: white;
+    font-size: 15px;
+}
+
+
+
+
+
+.wrap_footer_1{
+    width: 1200px;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+
+.bloque_footer h4{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.bloque_footer:nth-child(1) h4{ color: #8DC76A; }
+.bloque_footer:nth-child(2) h4{ color: #00A7F1; }
+.bloque_footer:nth-child(3) h4{ color: #FFA837; }
+
+
+.bloque_footer .logo_footer{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.bloque_footer .definicion_1{
+    width: 80%;
+    line-height: normal;
+    font-size: 15px;
+    color: #3c3c3c;
+}
+
+
+.bloque_footer:nth-child(2) ul{
+    display: block;
+    margin-top: 40px;
+}
+
+
+.bloque_footer:nth-child(2) ul li{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+
+.bloque_footer:nth-child(2) ul li a{
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    color: #18b0f2;
+    padding: 15px;
+    transition: all 200ms;
+}
+
+.bloque_footer:nth-child(2) ul li a:hover{
+    border-left: 3px solid #18b0f2;
+}
+
+
+
+.bloque_footer:nth-child(3) ul{
+    margin-top: 40px;
+}
+
+.bloque_footer:nth-child(3) ul li{
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.bloque_footer:nth-child(3) ul li .iconos_footer{
+    width: 20px;
+}
+
+.bloque_footer:nth-child(3) ul li p{
+    margin-left: 10px;
+    font-size: 15px;
+    color: #3c3c3c;
+    line-height: normal;
+}
+/* -------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------- Terminos y condiciones de uso de la plataforma --------------------------- */
+.terminos{
+    background-image: url(../img/terminos-2.jpg);
+}
+
+.terminos .wrap_terminos{
+    width: 1200px;
+    min-height: 170px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terminos .wrap_terminos h3{
+    font-size: 35px;
+    text-transform: capitalize;
+    color: white;
+}
+
+.terminos .wrap_terminos a{
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #FFA837;
+    transition: all 500ms;
+}
+
+.terminos .wrap_terminos a:hover{
+    box-shadow: 0px -6px 0px #ed662d inset;
+}
+/* ------------------------------------------------------------------------------------------------------ */

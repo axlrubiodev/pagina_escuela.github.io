@@ -1,0 +1,383 @@
+body{
+    background-image: url(../img/pattern1.png);
+}
+
+
+/* ............................ Panel de profesor ............................ */
+.ocultar_panel{
+    overflow: visible !important;
+}
+
+.minimizar_usuario{
+    width: 50px !important;
+}
+
+.centrar_boton{
+    align-self: center !important;
+}
+
+.panel_profesor{
+    display: grid;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+}
+
+.rotar{
+    transform: rotate(0deg) !important;
+}
+
+.panel_profesor .wrap{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+}
+
+.panel_profesor .wrap .bloque_usuario{
+    width: 300px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.panel_profesor .wrap .bloque_usuario .imagen_usuario{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    background-color: #DAB6FC;
+}
+
+.panel_profesor .wrap .bloque_usuario .nombre_prof{
+    font-weight: 600;
+    color: #3c3c3c;
+    font-size: 16px;
+}
+
+.panel_profesor .wrap .bloque_usuario .cargo_prof{
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    color: #999;
+}
+
+.boton_mostrar_menu_profesor{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 15px;
+    height: 15px;
+    align-self: flex-end;
+    background-color: white;
+    border: 1px solid #886DC9;
+    padding: 10px;
+    border-radius: 50%;
+    fill: #886DC9;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.boton_mostrar_menu_profesor svg{
+    transform: rotate(180deg);
+}
+
+.boton_mostrar_menu_profesor:hover{
+    background-color: #886DC9;
+    fill: white;
+}
+
+.botonera_prof{
+    width: 100%;
+    align-self: flex-start;
+    margin-top: 30px;
+    overflow-y: scroll;
+}
+
+.botonera_prof li a{
+    display: block;
+    padding: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    color: #3c3c3c;
+
+    display: flex;
+    align-items: center;
+}
+
+.botonera_prof li a svg{
+    width: 15px;
+    margin-right: 10px;
+    fill: #3c3c3c;
+}
+
+.botonera_prof li a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+/* ........................................................................... */
+
+
+
+/* ............................. Panel de cursos ............................. */
+.bloque_clases{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor_imagen_vacio{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 90px 50px white;
+}
+
+.contenedor_imagen_vacio img{
+    width: 80%;
+}
+
+.boton_crear{
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background-color: #FE383C;
+    border-radius: 8px;
+    margin-top: 30px;
+    transition: all 500ms;
+}
+
+.boton_crear:hover{
+    box-shadow: 0px -8px 0px #AC0F19 inset;
+}
+/* ........................................................................... */
+
+
+
+
+/* .............................. Modal de crear .............................. */
+.cerrar_modal{
+    display: none !important;
+}
+
+.modal_formulario{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 800;
+
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario_agregar{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.formulario_agregar .cabecera{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    background-color: #FAFAFA;
+}
+
+.formulario_agregar .cabecera h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.formulario_agregar .cabecera .cerrar{
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+    font-weight: 800;
+    background-color: #CACACA;
+    color: white;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.formulario_agregar .cabecera .cerrar:hover{
+    background-color: #999999;
+}
+
+.formulario_agregar .cabecera .cerrar svg{
+    width: 8px;
+    fill: white;
+}
+
+.formulario_agregar form{
+    padding: 40px;
+}
+
+.formulario_agregar form p{
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #3c3c3c;
+}
+
+.formulario_agregar form input{
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.formulario_agregar form select{
+    padding: 12px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.formulario_agregar .pie_form{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #FAFAFA;
+    display: flex;
+    padding: 8px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.formulario_agregar .boton_pie_formulario{
+    width: 80px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #000;
+    margin-left: 10px;
+    transition: all 500ms;
+}
+
+.formulario_agregar .boton_pie_formulario:nth-child(1){
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.formulario_agregar .boton_pie_formulario:nth-child(1):hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.formulario_agregar .boton_pie_formulario:nth-child(2){
+    border: 1px solid #064b2a;
+    background-color: #0D8148;
+    color: white;
+}
+
+.formulario_agregar .boton_pie_formulario:nth-child(2):hover{
+    background-color: #074d2b;
+    color: white;
+}
+/* ............................................................................ */
+
+
+/* ................................ Asignaturas ................................ */
+.contenedor_asignaturas{
+}
+
+.contenedor_asignaturas .card_asignatura{
+    margin: 40px;
+    padding: 30px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card_asignatura p{
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #3c3c3c;
+    font-size: 20px;
+}
+
+.botones_asignatura{
+    display: flex;
+}
+
+.botones_asignatura div{
+    padding: 15px;
+    margin-right: 25px;
+    background-color: #EEEEEE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #3c3c3c;
+    text-transform: capitalize;
+    transition: all 500ms;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.botones_asignatura a{
+    padding: 15px;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: #3c3c3c;
+    text-transform: capitalize;
+    transition: all 500ms;
+    font-weight: 600;
+}
+
+.botones_asignatura div:hover, 
+.botones_asignatura a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.b2{
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* ............................................................................. */

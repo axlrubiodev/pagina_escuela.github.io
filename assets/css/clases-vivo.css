@@ -1,0 +1,83 @@
+.menu_vivo .botonera_tarea h2{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.menu_vivo .botonera_tarea .linea_horizontal{
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+
+.menu_vivo .botonera_tarea h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #3c3c3c;
+}
+
+
+.menu_vivo .botonera_tarea .campo{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-top: 20px;
+}
+
+.menu_vivo .botonera_tarea .campo p{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    top: -10px
+}
+
+.menu_vivo .botonera_tarea .campo input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.menu_vivo .botonera_tarea .campo textarea{
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+.menu_vivo .botonera_tarea .campo.cuando{
+    display: grid;
+    grid-template-columns: auto 1fr 10px 1fr 30px 1fr;
+}
+
+.menu_vivo .botonera_tarea .campo.cuando input:nth-child(1){
+    display: block;
+    margin-right: 20px;
+}
+
+.enviar_btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.enviar_btn input{
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: transparent;
+    background-color: #00A7F1;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 500ms;
+}
+
+.enviar_btn input:hover{
+    box-shadow: 0px -6px 0px #006e9d inset;
+    cursor: pointer;
+}

@@ -1,0 +1,135 @@
+/* ----------------------------------------- Valores ----------------------------------------- */
+
+.contenedor_valores .wrap_content{
+    width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor{
+    min-height: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #F5F5F5;
+
+    position: relative;
+    top: 0px;
+    z-index: 300;
+}
+
+
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(1){
+    background-color: #FFA837;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4), 
+                0px -8px 0px #FFA837 inset;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(1) .contenedor_icono{
+    border: 2px solid #FFA837;
+}
+
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(2){
+    background-color: #00A7F1;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4), 
+                0px -8px 0px #00A7F1 inset;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(2) .contenedor_icono{
+    border: 2px solid #00A7F1;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(3){
+    background-color: #856FCB;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4), 
+                0px -8px 0px #856FCB inset;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(3) .contenedor_icono{
+    border: 2px solid #856FCB;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(4){
+    background-color: #F93E39;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4), 
+                0px -8px 0px #F93E39 inset;
+}
+
+.contenedor_valores .wrap_content .tarjeta_valor:nth-child(4) .contenedor_icono{
+    border: 2px solid #F93E39;
+}
+
+
+.tarjeta_valor{
+    text-align: center;
+    transition: all 500ms;
+    background-image: url(../img/utiles.png);
+    background-size: cover;
+}
+
+.tarjeta_valor:hover{
+    background-color: #F5F5F5 !important;
+}
+
+
+.tarjeta_valor .contenedor_icono{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+.tarjeta_valor .contenedor_icono svg{
+    width: 40px;
+    margin: 10px;
+}
+
+
+
+
+
+.tarjeta_valor h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    margin-top: 20px;
+    transition: all 500ms;
+}
+
+.tarjeta_valor p{
+    color: white;
+    margin-top: 20px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+    transition: all 500ms;
+}
+
+.tarjeta_valor:hover:nth-child(1) h4{
+    color: #FFA837;
+}
+
+.tarjeta_valor:hover:nth-child(2) h4{
+    color: #00A7F1;
+}
+
+.tarjeta_valor:hover:nth-child(3) h4{
+    color: #856FCB;
+}
+
+.tarjeta_valor:hover:nth-child(4) h4{
+    color: #F93E39;
+}
+
+
+
+.tarjeta_valor:hover p{
+    color: #3c3c3c;
+}
+/* ------------------------------------------------------------------------------------------- */

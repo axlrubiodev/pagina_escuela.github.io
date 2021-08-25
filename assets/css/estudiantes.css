@@ -1,0 +1,73 @@
+.menu_informacion .botonera_tarea{
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+}
+
+.botonera_tarea h2{
+    font-size: 30px;
+    color: #3c3c3c;
+}
+
+.botonera_tarea p{
+    margin-top: 20px;
+    color: #3c3c3c;
+}
+
+
+
+
+.contenedor_estudiantes{
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: 50px repeat(6, 1fr);
+}
+
+.contenedor_estudiantes h3{
+    text-transform: capitalize;
+    color: #3c3c3c;
+}
+
+.contenedor_estudiantes p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+
+
+/* Botones de accion de los estudiantes */
+.botones_accion_estudiante{
+    display: flex;
+    align-items: center;
+}
+
+.botones_accion_estudiante a{
+    width: 10px;
+    height: 10px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones_accion_estudiante a:nth-child(1){
+    margin-right: 10px;
+    background-color: #E64D3E;
+}
+
+
+.botones_accion_estudiante a:nth-child(1):hover{
+    box-shadow: 0px -5px 0px #77241d inset;
+}
+
+
+.botones_accion_estudiante a #btn_eliminar, 
+.botones_accion_estudiante a #btn_ajustes{
+    width: 18px;
+    height: 18px;
+}

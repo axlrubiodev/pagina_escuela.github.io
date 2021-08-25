@@ -1,0 +1,152 @@
+/* -------------------------------- Cabecera -------------------------------- */
+.header_blog{
+    background-image: url(../img/blog1-bc-bg.png);
+}
+
+.header_blog .wrap_header_blog{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.header_blog .wrap_header_blog h1{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------- Entradas de blog ---------------------------- */
+.contenedor_blog{
+    min-height: 1200px;
+
+    display: flex;
+}
+
+.wrap_blog{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+
+
+/* ----------------------------------- Entrada ----------------------------------- */
+.entrada{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+.entrada .image_entrada{
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.entrada .descripcion_entrada{
+    font-size: 15px;
+    line-height: normal;
+    color: #3c3c3c;
+}
+
+.entrada .descripcion_entrada h5{
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #F93E39;
+    text-align: center;
+}
+
+.entrada .descripcion_entrada p{
+    font-size: 16px;
+}
+
+.boton_entrada a{
+    width: 80px;
+    display: block;
+    background-color: #F93E39;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px auto 0px auto;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    transition: all 500ms;
+}
+
+.boton_entrada a:hover{
+    box-shadow: 0px -8px 0px #A80E0E inset;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+/**/
+.contenedor_datos_entrada{
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.contenedor_datos_entrada .dato{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_datos_entrada .dato svg{
+    width: 20px;
+    margin-right: 10px;
+    fill:rgba(0, 0, 0, 0.6);
+}
+
+.contenedor_datos_entrada .dato p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+/**/
+
+
+
+
+/* ------------------------------- Paginacion ------------------------------- */
+.paginacion{
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.paginacion a{
+    padding: 12px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    color: white;
+    background-color: #00A5EE;
+    transition: all 500ms;
+}
+
+.paginacion a:hover{
+    box-shadow: 0px -7px 0px #0072a3 inset;
+}
+
+.desactivado{
+    background-color: silver !important;
+    box-shadow: transparent;
+}
+/* -------------------------------------------------------------------------- */

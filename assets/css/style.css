@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+*:focus{
+    outline: none;
+}
+
+h1, h2, h3,
+h4, h5, h6{
+    font-family: 'Fredoka One', cursive !important;
+}
+
+
+
+/* ------------------- Barra de navegación ------------------- */
+.barra_navegacion{
+    padding: 20px 0px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    
+    position: relative;
+    z-index: 400;
+    background-color: white;
+}
+
+.barra_navegacion article[class='wrap']{
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barra_navegacion article[class='wrap'] .menu_uno .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.barra_navegacion article[class='wrap'] .menu_uno svg{
+    display: none;
+}
+
+
+.barra_navegacion article[class='wrap'] .menu_dos{
+    transition: margin 500ms;
+}
+
+
+.barra_navegacion article[class='wrap'] .menu_dos .opciones_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: capitalize;
+}
+
+.menu_dos .opciones_menu li{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.menu_dos .opciones_menu li a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.opciones_menu li:nth-child(1) a{ color: #FFA837; }
+.opciones_menu li:nth-child(2) a{ color: #00A8F1; }
+.opciones_menu li:nth-child(3) a{ color: #F93E39; }
+.opciones_menu li:nth-child(4) a{ color: #86C554; }
+.opciones_menu li:nth-child(4) a{ color: #8671CC; }
+.opciones_menu li:nth-child(5) a{ color: #FFA837; }
+.opciones_menu li:nth-child(6) a{ color: #FFFFFF; }
+
+.opciones_menu li:nth-child(6){
+    background-color: #00A7F1;
+    border-radius: 5px;
+
+    display: flex;
+    overflow: hidden;
+
+    transition: all 400ms;
+}
+
+.opciones_menu li:nth-child(6):hover{
+    box-shadow: 0px 0px 10px #00A8F1;
+}
+
+.opciones_menu li:nth-child(6) a{
+    padding: 15px;
+}
+/* ----------------------------------------------------------- */
